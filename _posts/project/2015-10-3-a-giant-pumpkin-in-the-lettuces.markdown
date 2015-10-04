@@ -10,11 +10,14 @@ img: Good_Crops_square.jpg
 thumb: Good-Crops_thumb.jpg
 ---
 
-From: Leon Jacobs <no-reply@thelistserve.com>
 
-Date: October 6, 2014 at 1:01:04 PM EDT
+Almost exactly a year ago, I got this email from [the Listserve](http://thelistserve.com/) that made me start thinking about all of the tiny things that, when added up, make a place 'good' to....be. I still wasn't sure if I would work in government yet, but I'd just returned from the Code for America Summit and was thinking about it a lot. I started a little pencil sketch, and finished a few months later on vacation in Puerto Rico. I'd completely forgotten I'd digitized and colored it until tonight. Below is the story; I think it's still my favorite email.
 
-Subject: [The Listserve] A giant pumpkin in the lettuces
+---
+
+**From:** Leon Jacobs <no-reply@thelistserve.com>  
+**Date:** October 6, 2014 at 1:01:04 PM EDT  
+**Subject:** [The Listserve] A giant pumpkin in the lettuces
 
 About ten years ago I was shooting a commercial for organic vegetables on the West Coast of South Africa. Before the cameras rolled, I took a walk with the farmer to inspect the crops. The soil in that part of the world is white and fine - like beach sand. I was amazed that anything grew in it, let alone bulbous aubergines and lush lettuces that were fit for the finest food stores in the world.
 
@@ -40,9 +43,7 @@ The kindness and respect and empathy you show today might not come back to you t
 
 It was a privilege writing to you all. I would enjoy hearing from you - on email or twitter. My handle is my first and last name.
 
-**Leon Jacobs**
-
-listserveleon@gmail.com
-
-Cape Town, South Africa
+**Leon Jacobs**  
+listserveleon@gmail.com  
+Cape Town, South Africa  
 <!-- [hampden]: https://github.com/jekyll/jekyll -->
