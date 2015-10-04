@@ -13,6 +13,7 @@ thumb: Good-Crops_thumb.jpg
 
 Almost exactly a year ago, I got this email from [the Listserve](http://thelistserve.com/) that made me start thinking about all of the tiny things that, when added up, make a place 'good' to....be. I still wasn't sure if I would work in government yet, but I'd just returned from the Code for America Summit and was thinking about it a lot. I started a little pencil sketch, and finished a few months later on vacation in Puerto Rico. I'd completely forgotten I'd digitized and colored it until tonight. Below is the story; I think it's still my favorite email.
 
+<!--more-->
 ---
 
 **From:** Leon Jacobs <no-reply@thelistserve.com>  

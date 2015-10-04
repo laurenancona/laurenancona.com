@@ -430,7 +430,7 @@ a:focus {
 .ctitle {
 	color: {{ site.colors.primary }};
 	font-weight: 700;
-	margin: 15px 0px 15px;
+	margin: 35px 0px 15px;
 }
 
 csmall {
