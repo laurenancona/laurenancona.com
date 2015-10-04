@@ -11,7 +11,7 @@
     <meta name="twitter:site" content="@laurenancona">
     <meta name="twitter:creator" content="@laurenancona">
     <meta name="twitter:title" content="{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <meta name="twitter:image" content="{{ page.img | prepend: site.baseurl }}">
     <!-- Bootstrap core CSS -->
     <link href="{{ "/assets/css/bootstrap.css" | prepend: site.baseurl }}" rel="stylesheet">
