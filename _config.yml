@@ -32,14 +32,12 @@ social:
 #    url:
   - title: twitter
     url: https://twitter.com/laurenancona
-#  - title: instagram
-#    url: 
+  - title: instagram
+    url: https://instagram.com/laurenancona/
   - title: github
     url: https://github.com/laurenancona
-
   - title: linkedin
     url: https://linkedin.com/in/laurenancona
-
   - title: medium
     url: https://medium.com/laurenancona
 
