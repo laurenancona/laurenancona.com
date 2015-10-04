@@ -27,19 +27,17 @@ colors:  #in hex code if not noted else
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
   - title: dribbble
-    url: https://dribbble.com/laurenancona
-#  - title: facebook
-#    url:
+    url: https://dribbble.com/laurenancona  
   - title: twitter
-    url: https://twitter.com/laurenancona
+    url: https://twitter.com/laurenancona  
   - title: instagram
-    url: https://instagram.com/laurenancona/
+    url: https://instagram.com/laurenancona  
   - title: github
-    url: https://github.com/laurenancona
+    url: https://github.com/laurenancona  
   - title: linkedin
-    url: https://linkedin.com/in/laurenancona
+    url: https://linkedin.com/in/laurenancona  
   - title: medium
-    url: https://medium.com/laurenancona
+    url: https://medium.com/laurenancona  
 
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
