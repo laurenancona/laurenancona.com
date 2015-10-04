@@ -8,6 +8,7 @@ categories:
 - illustration
 img: GoodCropsw_36x24crop.jpg
 thumb: Good-Crops_thumb.jpg
+description: "Good crops, she explained, are just the byproducts of happy soil."
 ---
 
 
