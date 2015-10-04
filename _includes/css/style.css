@@ -528,4 +528,9 @@ a.anchor{
 	color: {{ site.colors.footer_content }};
 }
 
-
+.img-inline {
+	float: right;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	height: 250px;
+}
