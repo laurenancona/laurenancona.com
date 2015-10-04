@@ -2,7 +2,7 @@
 layout: post
 title: "A Giant Pumpkin in the Lettuces"
 date: 2015-10-3 20:27:46
-author: Lauren
+author: Lalaland
 categories:
 - blog
 - illustration
