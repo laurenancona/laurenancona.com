@@ -4,7 +4,7 @@ title: "A Giant Pumpkin in the Lettuces"
 date: 2015-10-3 20:27:46
 author: Lauren
 categories:
-- blog
+- project
 - illustration
 img: GoodCropsw_36x24.jpg
 thumb: Good-Crops_thumb.jpg
