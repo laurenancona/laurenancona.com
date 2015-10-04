@@ -6,7 +6,7 @@ author: Lauren
 categories:
 - blog
 - illustration
-img: GoodCropsw_36x24.jpg
+img: GoodCropsw_36x24crop.jpg
 thumb: Good-Crops_thumb.jpg
 ---
 

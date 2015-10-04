@@ -430,7 +430,7 @@ a:focus {
 .ctitle {
 	color: {{ site.colors.primary }};
 	font-weight: 700;
-	margin-bottom: 15px;
+	margin: 15px 0 15px;
 }
 
 csmall {
@@ -517,6 +517,6 @@ a.anchor{
 /* CUSTOMIZATIONS */
 
 #map-overlay-text {
-	margin-top: 100px;	
+	margin-top: 300px;	
 }
 
