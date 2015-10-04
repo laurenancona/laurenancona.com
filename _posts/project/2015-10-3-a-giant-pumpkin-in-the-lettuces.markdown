@@ -8,7 +8,7 @@ categories:
 - illustration
 img: GoodCropsw_36x24crop.jpg
 thumb: Good-Crops_thumb.jpg
-description: "The kindness and respect and empathy you show today might not come back to you tomorrow. But perhaps - in a summer to come - you too will find a giant pumpkin in your lettuces."
+description: "No matter what your occupation, you’re growing crops. Your soil is your life."
 ---
 
 
