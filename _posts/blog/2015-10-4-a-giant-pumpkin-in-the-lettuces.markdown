@@ -1,18 +1,19 @@
 ---
-layout: post
+layout: post             #important: don't change this
 title: "A Giant Pumpkin in the Lettuces"
-date: 2015-10-3 20:27:46
-author: Lauren
+date: 2015-10-4 15:05:46
+author: Lalaland
 categories:
-- project
-- illustration
-img: GoodCropsw_36x24.jpg
+- blog
+img: GoodCropsw_36x24crop.jpg         #place image (850x450) with this name in /assets/img/blog/ 
 thumb: Good-Crops_thumb.jpg
+description: "No matter what your occupation, you’re growing crops. Your soil is your life."
 ---
 
 
-Almost exactly a year ago, I got this email from [the Listserve](http://thelistserve.com/) that made me start thinking about all of the tiny things that, when added up, make a place 'good' to....be. I still wasn't sure if I would work in government yet, but I'd just returned from the Code for America Summit and was thinking about it a lot. I started a little pencil sketch, and finished a few months later on vacation in Puerto Rico. I'd completely forgotten I'd digitized and colored it until tonight. Below is the story; I think it's still my favorite email.
+<img class="img-inline" alt="Original sketch" src="/assets/img/blog/Good-Crops-sketch.jpg"> Almost exactly a year ago, I got this email from [the Listserve](http://thelistserve.com/) that made me start thinking about all of the tiny things that, when added up, make a place 'good' to...be. I still wasn't sure if I would work in government yet, but I'd just returned from the Code for America Summit and was thinking about it a lot. I started a little pencil sketch, and finished a few months later on vacation in Puerto Rico. I'd completely forgotten I'd digitized and colored it until tonight. Below is the story; I think it's still my favorite email.
 
+<!--more-->
 ---
 
 **From:** Leon Jacobs <no-reply@thelistserve.com>  
