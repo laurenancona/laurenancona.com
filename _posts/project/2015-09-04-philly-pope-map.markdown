@@ -4,11 +4,11 @@ title:  "PhillyPopeMap.com"
 date:   2015-09-04 11:15:46
 author: Lalaland
 categories:
-- project
-- maps
-img: PopeMap.png
-thumb: thumb02.jpg
+- project        #important: leave this here
+img: PopeMap.png       #place image (600x450) with this name in /assets/img/project/
+thumb: thumb02.jpg     #place thumbnail (70x70) with this name in /assets/img/project/thumbs/
 carousel:
+-             #place image (1280x600) with this name in /assets/img/project/carousel/
 website: https://phillypopemap.com
 ---
 ####PHILLY POPE MAP
