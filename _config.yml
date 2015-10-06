@@ -4,7 +4,7 @@
 title: Lauren Ancona
 description: "Data visualization, map design & web analytics."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "http://laurenancona.github.io" #important: start with /
+baseurl: "" #important: start with /
 url: "http://laurenancona.github.io"
 keep_files: [./maps, ./parking, ./resources, ./examples]
 
