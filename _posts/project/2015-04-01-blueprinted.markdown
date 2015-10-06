@@ -6,7 +6,7 @@ author: Lalaland
 categories:
 - project 
 - map
-img: Blueprintedproject.jpg       #place image (600x450) with this name in /assets/img/project/
+img: Blueprinted_project.jpg       #place image (600x450) with this name in /assets/img/project/
 thumb: Bllueprinted_thumb.jpg      #place thumbnail (70x70) with this name in /assets/img/project/thumbs/
 carousel:
 - Blueprinted_carousel1.jpg           #place image (1280x600) with this name in /assets/img/project/carousel/
