@@ -5,6 +5,7 @@ date: 2015-10-5 03:05:04
 author: Lalaland
 categories:
 - blog
+- illustration
 img: Basically-Just-Winging-It.jpg         #place image (850x450) with this name in /assets/img/blog/ 
 thumb: Basically-Just-Winging-It_thumb.jpg
 description: "Basically everyone's been winging it since forever...you're not the only one."
