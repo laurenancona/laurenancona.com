@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #map {
-  position:absolute; top:0; bottom:0; width:100%; height:600px;
+  position:absolute; top:0; bottom:0; width:100%; height:300px;
 }
 
 p { 
@@ -413,7 +413,7 @@ a:focus {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  height: 600px;
+  /*height: 600px;*/
   max-height: 600px;
   margin: 0 auto;
 }
@@ -453,7 +453,7 @@ csmall {
 
 /* Contact Page */
 #contactwrap {
-	background: url(../img/contact.jpg) no-repeat center top;
+	background: url(../img/contact_header.jpg) no-repeat center top;
 	margin-top: -60px;
 	padding-top:0px;
 	text-align:center;
@@ -521,7 +521,7 @@ a.anchor{
 /* CUSTOMIZATIONS */
 
 #map-overlay-text {
-	margin-top: 300px;	
+	/*margin-top: 200px;	*/
 }
 
 .fa fa-medium {
@@ -533,4 +533,12 @@ a.anchor{
 	padding-left: 15px;
 	padding-bottom: 15px;
 	height: 250px;
+}
+
+div.row {
+	padding-left: 15px;
+}
+
+#footerwrap div.container {
+	padding-left: 0px;
 }
