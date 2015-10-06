@@ -5,7 +5,7 @@ date:   2015-04-01 11:15:46
 author: Lalaland
 categories:
 - project 
-tags: map
+- map
 img: Blueprinted_project.jpg       #place image (600x450) with this name in /assets/img/project/
 thumb: Blueprinted_thumb.jpg      #place thumbnail (70x70) with this name in /assets/img/project/thumbs/
 carousel:

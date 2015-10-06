@@ -5,8 +5,8 @@ date:   2015-09-04 11:15:46
 author: Lalaland
 categories:
 - project 
-tags: map
-img: PopeMap.jpg       #place image (600x450) with this name in /assets/img/project/
+- map
+img: PopeMap_project.jpg       #place image (600x450) with this name in /assets/img/project/
 thumb: PopeMap_thumb.jpg      #place thumbnail (70x70) with this name in /assets/img/project/thumbs/
 carousel:
 - PopeMap_carousel.jpg           #place image (1280x600) with this name in /assets/img/project/carousel/
