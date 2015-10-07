@@ -1,0 +1,24 @@
+{
+	"version": 7,
+	"sources": {
+	  "simple-tiles": {
+	    "type": "geojson",
+	    "url": "http://laurenancona.com/parking/data/GIS_STREETS.Street_Poles.geojson",
+	    "tileSize": 256
+	  }
+	},
+	"layers": [
+	  {
+	  "id": "Council_Districts_2000",
+	  "type": "line",
+	  "source": "simple-tiles",
+	  "source-layer": "Council_Districts_2000",
+				"paint": {
+			"line-color": "#000000",
+			"line-width": 2
+			}
+	  }
+	],	
+	"center": [ 39.952998, -75.163927 ], // starting position
+	"zoom: 12 // starting zoom
+}

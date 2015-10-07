@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Residential Permit Parking | Philadelphia</title>
+<meta property="og:title" content="Residential Permit Parking | Philadelphia"/>
+<meta property="og:url" content="http://laurenancona.com/parking"/>
+<meta property="og:site_name" content="Lauren Ancona"/>
+<meta property="og:image" content="http://laurenancona.com/parking/permit-blocks-map.png"/>
+<meta property="og:description" content="Mapping Philadelphia's parking regulations" />
+<meta property="og:image" content="img/thumb.png" />
+<meta name="twitter:card" content="photo" />
+<meta name="twitter:site" content="@laurenancona" />
+<meta name="twitter:creator" content="@laurenancona" />
+<link rel="image_src" href="http://laurenancona.com/parking/permit-blocks-map.png"/>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.js'></script>
+<link href='css/mapbox.css' rel='stylesheet' />
+<link rel="shortcut icon" href="http://laurenancona.com/LA-Icon-2014_red_favi.ico" type="image/x-icon">
+<link href="css/style.css" type="text/css" rel='stylesheet'>
+<!--[if lt IE 9]>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.21.0/L.Control.Locate.ie.css' rel='stylesheet' />
+<![endif]-->
+</head>
+<body>
+  <!-- Google Tag Manager, of course -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W6WFRN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W6WFRN');</script>
+  <!-- End Google Tag Manager -->
+
+	<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-hash/v0.2.1/leaflet-hash.js'></script>
+	<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css' rel='stylesheet' />
+	<style>
+	.legend label,
+	.legend span {
+	  display:block;
+	  float:left;
+	  height:15px;
+	  width:20%;
+	  text-align:center;
+	  font-size:9px;
+	  color:#808080;
+	  }
+	</style>
+	<div id='map' class='dark'></div>
+	<div id='warning'>
+		<p>Alpha: </p>
+	</div>
+<!-- 	<div id='info-bar'>
+		<ul>
+			<li>About</li>
+			<li>Subscribe</li>
+			<li>Credits</li>
+			<li>Terms</li>
+		</ul>
+	</div> -->
+
+	<div id="container">
+	  <span id="text">Philadelphia Residential <br>
+	    <span style="font-size:1.5em;">Permit Parking</span>
+	  </span>
+	</div>
+	<!-- <div id="credits">
+	  <p>Created by <a href="https://twitter.com/laurenancona" target="_blank">@laurenancona</a> 
+	  </p>
+	</div> -->
+	<div id="legend" style='display:none;'>
+  <!-- Set the display of this container to none so we can
+     add it programmatically to `legendControl` -->
+  <strong>Side of Street</strong>
+  <nav class='legend clearfix'>
+    <span style='background:#B0E820;'></span>
+    <span style='background:#FFFFFF;'></span>
+    <span style='background:#F33D00;'></span>
+    <span style='background:#24D5D5;'></span>
+    <span style='background:#5173C7;'></span>
+    <label>Both</label>
+    <label>North</label>
+    <label>South</label>
+    <label>East</label>
+    <label>West</label>
+    <small>Source: <a href="#https://www.opendataphilly.org/dataset/residential-parking-permit-blocks">PPA</a></small>
+	</div>
+</div>
+
+  <script>
+    L.mapbox.accessToken = 'pk.eyJ1IjoibGF1cmVuYW5jb25hIiwiYSI6IkNibGxlRWcifQ.ul9_tiHEKhj52QIfwYjoKA';
+	  	// Construct a bounding box
+			var southWest = L.latLng(39.8785, -75.2972),
+	   			northEast = L.latLng(40.0595, -74.9460),
+			    bounds = L.latLngBounds(southWest, northEast);
+
+     	var map = L.mapbox.map('map','laurenancona.mgb93lh3', {
+     		// set that bounding box as maxBounds to restrict moving the map (http://leafletjs.com/reference.html#map-maxbounds)
+		    maxBounds: bounds,
+		    maxZoom: 19,
+		    minZoom: 12
+			})
+
+			map.fitBounds(bounds); // zoom/snap the map to that bounding box
+
+			// Here be our data layers
+			var blocks 		= L.mapbox.tileLayer('laurenancona.fc7871b8'), //,
+					districts = L.mapbox.featureLayer('laurenancona.jn22om7k');			
+			//	lots			= L.mapbox.featureLayer('').addTo(map);
+    
+    L.control.layers({
+	  	//  'Parking Dark': L.mapbox.tileLayer('laurenancona.mgb93lh3').addTo(map),
+	  	//  'Parking Light': L.mapbox.tileLayer('laurenancona.fc7871b8')
+	  	}, {
+	  	'Permit Blocks': blocks.addTo(map),
+	  	'Permit Districts': districts //,
+	  //	'Permit Lots': lots
+		}).addTo(map);
+
+  		map.legendControl.addLegend(document.getElementById('legend').innerHTML);
+
+			 var blocksTiles 			= blocks.addTo(map);
+			 var blocksGrid 			= L.mapbox.gridLayer('laurenancona.fc7871b8').addTo(map); //,
+	  	 // 		lotsGrid 				= L.mapbox.gridLayer('laurenancona.fc7871b8').addTo(map);
+			 var blocksControl 	 	= L.mapbox.gridControl(blocksGrid	).addTo(map); //,
+			 //		lotsControl  			=   L.mapbox.gridControl('laurenancona.fc7871b8').addTo(map);
+
+			var hash = L.hash(map); // append (z)/(x)/(y) to URL for deep linking to locations
+
+			map.setView([39.9547, -75.1695], 14);
+
+  </script>
+
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+{
+	"version": 7,
+	"sources": {
+	  "simple-tiles": {
+	    "type": "vector",
+	    "url": "mapbox://laurenancona.e8146fe3",
+	    "tileSize": 256
+	  }
+	},
+	"layers": [
+	  {
+	  "id": "Council_Districts_2000",
+	  "type": "line",
+	  "source": "simple-tiles",
+	  "source-layer": "Council_Districts_2000",
+				"paint": {
+			"line-color": "#000000",
+			"line-width": 2
+			}
+	  }
+	],	
+	"center": [ 39.952998, -75.163927 ], // starting position
+	"zoom": 12 // starting zoom
+}

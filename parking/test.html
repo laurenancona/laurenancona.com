@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+		There are (and will be) many, many people to thank for the existence of this map.
+		But there are a few that spent time, energy, & patience helping me learn to map & code:
+
+		 	Chris Alfano			Tim Wisniewski				Dane Springmeyer			
+			James Healy				Tom Swanson					Lyzi Diamond					
+			Sarah Cordivano			Aaron Ogle					Amy Lee Walton			
+			Andrew Thompson			Mark Wheeler 				Tom MacWright
+			Thomas Fuchs			Gabriel Farrell
+			Amy Hoy					Mjumbe Poe
+			Alex Hillman			Robert Martin
+			Chris Tufts				Karissa Demi
+			Eric Mill				Patrick Hammons			
+
+			Thank you.
+
+  	====================================================================
+
+		The data contained in this map will be included in Parkadelphia, a web app that maps street parking regulations in Philadelphia.
+		Sign up to be notified of updates & releases at http://parkadelphia.org
+
+		The first version of this map was published 06/20/14. Archive: http://laurenancona.com/parking/districts.html
+
+ -->
+<meta charset="utf-8" />
+<title>Residential Permit Parking | Philadelphia</title>
+<meta property="og:title" content="Residential Permit Parking | Philadelphia"/>
+<meta property="og:url" content="http://laurenancona.com/parking"/>
+<meta property="og:site_name" content="Lauren Ancona"/>
+<meta property="og:image" content="http://laurenancona.com/parking/images/permit-blocks-map.png"/>
+<meta property="og:description" content="Mapping Philadelphia's parking regulations" />
+<meta name="twitter:card" content="photo" />
+<meta name="twitter:site" content="@laurenancona" />
+<meta name="twitter:creator" content="@laurenancona" />
+<link rel="image_src" href="http://laurenancona.com/parking/images/permit-blocks-map.png"/>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+<link href='css/mapbox.css' rel='stylesheet' />
+<link rel="shortcut icon" href="http://laurenancona.com/LA-Icon-2014_red_favi.ico" type="image/x-icon">
+<link href="css/style.css" type="text/css" rel='stylesheet'>
+<link rel="stylesheet" href="css/Control.Geocoder.css" />
+<script src="js/Control.Geocoder.js"></script>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<script src="//use.typekit.net/tqz0lco.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+<!--[if lt IE 9]>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.21.0/L.Control.Locate.ie.css' rel='stylesheet' />
+<![endif]-->
+</head>
+<body>
+  <!-- Google Tag Manager, counting all the things -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6WFRN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W6WFRN');</script>
+  <!-- End Google Tag Manager -->
+
+	<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-hash/v0.2.1/leaflet-hash.js'></script>
+	<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css' rel='stylesheet' />
+	<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.mapbox.css' rel='stylesheet' />
+	<!--[if lt IE 9]>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.ie.css' rel='stylesheet' />
+	<![endif]-->
+	<link href='css/font-awesome.min.css' rel='stylesheet' />
+	<style>
+		.legend label,
+		.legend span {
+		  display:block;
+		  float:left;
+		  height:20px;
+		  width:34px;
+		  font-size:9px;
+		  color: black;
+		  font-weight: 700;
+		  text-align: center;
+			font-family:"futura-pt", sans-serif; 
+  	}
+	</style>
+	<div id='map' ></div>
+	<div id='warning'>
+		<span id="warning-text">Warning: This jawn is in <a href="https://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha" target="_blank" />Alpha</a></span>
+	</div>
+<!-- 	<div id='info-bar'>
+		<ul>
+			<li>About</li>
+			<li>Subscribe</li>
+			<li>Credits</li>
+			<li>Terms</li>
+		</ul>
+	</div> -->
+
+	<div id="container">
+	  <span id="text" style="color: #fff;">Philadelphia Residential Permit Parking</span>
+	  </span>
+	</div>
+	<!-- <div id="credits">
+	  <p>Created by <a href="https://twitter.com/laurenancona" target="_blank">@laurenancona</a> 
+	  </p>
+	</div> -->
+	<div id="legend" style='display:none;'>
+	  <strong>Side of Street</strong>
+	  <nav class='legend clearfix'>
+	    <span style='background:#B0E820;'><label>Both</label></span>
+	    <span style='background:#FFFFFF;'><label>North</label></span>
+	    <span style='background:#F33D00;'><label>South</label></span>
+	    <span style='background:#24D5D5;'><label>East</label></span>
+	    <span style='background:#5173C7;'><label><span style="color: white;">West</span></label></span>
+<!-- 	<label>Both</label>
+	    <label>North</label>
+	    <label>South</label>
+	    <label>East</label>
+	    <label>West</label> -->
+	    <!-- <small>Source: <a href="#https://www.opendataphilly.org/dataset/residential-parking-permit-blocks">Open Data Philly/PPA</a></small> -->
+	  </div>
+	</div>
+<script src='js/test.js'></script>
+</body>
+</html>
+
