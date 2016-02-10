@@ -26,7 +26,7 @@ I'm usually not the alone in needing to hear this stuff, and I've always wanted 
 So it became (among other things) a sticker:
 
 
-<div markdown=0 data-embed_type="product" data-shop="blue-room-co.myshopify.com" data-product_name="Everyone&#39;s Been Winging it Since Forever Laptop Sticker" data-product_handle="winging-it-sticker" data-has_image="true" data-display_size="compact" data-redirect_to="modal" data-buy_button_text="Buy now" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="a7bd1b" data-button_text_color="ffffff" data-background_color="ffffff" data-product_modal="true" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+<div markdown="0" data-embed_type="product" data-shop="blue-room-co.myshopify.com" data-product_name="Everyone&#39;s Been Winging it Since Forever Laptop Sticker" data-product_handle="winging-it-sticker" data-has_image="true" data-display_size="compact" data-redirect_to="modal" data-buy_button_text="Buy now" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="a7bd1b" data-button_text_color="ffffff" data-background_color="ffffff" data-product_modal="true" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
 <script type="text/javascript">
 document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
 </script>
